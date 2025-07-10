@@ -6,7 +6,7 @@ metadata:
      app: regapp
 
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: regapp
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: regapp
-        image: veeranarni/hotstar
+        image: mydekstop2604/hotstarr
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
